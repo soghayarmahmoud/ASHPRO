@@ -29,8 +29,10 @@ namespace ASHPRO
             guna2Panel1.Dock = DockStyle.None;
             guna2Panel1.Width = 350;
             guna2Panel1.Height = this.Height - 30;
-            guna2Panel1.Location = new Point(0, 35);
+            guna2Panel1.Location = new Point(0, 35); 
             guna2Panel1.FillColor = Color.FromArgb(20, 20, 20);
+
+            //guna2Panel1.BorderRadius. = 20;
             guna2Panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             Core.Initialize();
             guna2Panel1.BringToFront();
@@ -95,7 +97,7 @@ namespace ASHPRO
             }
             form3.Show();
         }
-
+          
         private void form3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (form4 == null || form4.IsDisposed)
@@ -113,7 +115,7 @@ namespace ASHPRO
             }
             form5.Show();
         }
-
+           
         private void fullScreenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (isFullScreen) return;
@@ -130,7 +132,7 @@ namespace ASHPRO
         }
 
         private void exitFullScreenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+                {
             if (!isFullScreen) return;
 
             this.FormBorderStyle = previousBorderStyle;

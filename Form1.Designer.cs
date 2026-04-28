@@ -49,6 +49,7 @@
             fullScreenToolStripMenuItem = new ToolStripMenuItem();
             exitFullScreenToolStripMenuItem = new ToolStripMenuItem();
             closeAppToolStripMenuItem = new ToolStripMenuItem();
+            videoView1 = new LibVLCSharp.WinForms.VideoView();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -130,6 +131,18 @@
             closeAppToolStripMenuItem.Size = new Size(270, 34);
             closeAppToolStripMenuItem.Text = "Close App";
             closeAppToolStripMenuItem.Click += closeAppToolStripMenuItem_Click;
+            // 
+            // videoView1
+            // 
+            videoView1.BackColor = Color.DeepSkyBlue;
+            videoView1.Dock = DockStyle.Fill;
+            videoView1.ForeColor = Color.Coral;
+            videoView1.Location = new Point(0, 33);
+            videoView1.MediaPlayer = null;
+            videoView1.Name = "videoView1";
+            videoView1.Size = new Size(1259, 601);
+            videoView1.TabIndex = 1;
+            videoView1.Text = "videoView1";
             // 
             // guna2Panel1
             // 
@@ -231,6 +244,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1259, 624);
             Controls.Add(guna2Panel1);
+            Controls.Add(videoView1);
             Controls.Add(menuStrip1);
             ImeMode = ImeMode.On;
             MainMenuStrip = menuStrip1;
@@ -256,6 +270,7 @@
         private ToolStripMenuItem fullScreenToolStripMenuItem;
         private ToolStripMenuItem exitFullScreenToolStripMenuItem;
         private ToolStripMenuItem closeAppToolStripMenuItem;
+        private LibVLCSharp.WinForms.VideoView videoView1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
