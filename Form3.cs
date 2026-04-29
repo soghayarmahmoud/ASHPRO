@@ -14,5 +14,15 @@ namespace ASHPRO
         {
             InitializeComponent();
         }
+
+        private void muteVideoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void videoView1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
