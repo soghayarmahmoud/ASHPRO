@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             filesToolStripMenuItem = new ToolStripMenuItem();
@@ -49,7 +49,6 @@
             fullScreenToolStripMenuItem = new ToolStripMenuItem();
             exitFullScreenToolStripMenuItem = new ToolStripMenuItem();
             closeAppToolStripMenuItem = new ToolStripMenuItem();
-            videoView1 = new LibVLCSharp.WinForms.VideoView();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -79,28 +78,28 @@
             // form1ToolStripMenuItem
             // 
             form1ToolStripMenuItem.Name = "form1ToolStripMenuItem";
-            form1ToolStripMenuItem.Size = new Size(270, 34);
+            form1ToolStripMenuItem.Size = new Size(166, 34);
             form1ToolStripMenuItem.Text = "Form1";
             form1ToolStripMenuItem.Click += form1ToolStripMenuItem_Click;
             // 
             // form2ToolStripMenuItem
             // 
             form2ToolStripMenuItem.Name = "form2ToolStripMenuItem";
-            form2ToolStripMenuItem.Size = new Size(270, 34);
+            form2ToolStripMenuItem.Size = new Size(166, 34);
             form2ToolStripMenuItem.Text = "Form2";
             form2ToolStripMenuItem.Click += form2ToolStripMenuItem_Click;
             // 
             // form3ToolStripMenuItem
             // 
             form3ToolStripMenuItem.Name = "form3ToolStripMenuItem";
-            form3ToolStripMenuItem.Size = new Size(270, 34);
+            form3ToolStripMenuItem.Size = new Size(166, 34);
             form3ToolStripMenuItem.Text = "Form3";
             form3ToolStripMenuItem.Click += form3ToolStripMenuItem_Click;
             // 
             // form4ToolStripMenuItem
             // 
             form4ToolStripMenuItem.Name = "form4ToolStripMenuItem";
-            form4ToolStripMenuItem.Size = new Size(270, 34);
+            form4ToolStripMenuItem.Size = new Size(166, 34);
             form4ToolStripMenuItem.Text = "Form4";
             form4ToolStripMenuItem.Click += form4ToolStripMenuItem_Click;
             // 
@@ -114,35 +113,23 @@
             // fullScreenToolStripMenuItem
             // 
             fullScreenToolStripMenuItem.Name = "fullScreenToolStripMenuItem";
-            fullScreenToolStripMenuItem.Size = new Size(270, 34);
+            fullScreenToolStripMenuItem.Size = new Size(230, 34);
             fullScreenToolStripMenuItem.Text = "Full Screen";
             fullScreenToolStripMenuItem.Click += fullScreenToolStripMenuItem_Click;
             // 
             // exitFullScreenToolStripMenuItem
             // 
             exitFullScreenToolStripMenuItem.Name = "exitFullScreenToolStripMenuItem";
-            exitFullScreenToolStripMenuItem.Size = new Size(270, 34);
+            exitFullScreenToolStripMenuItem.Size = new Size(230, 34);
             exitFullScreenToolStripMenuItem.Text = "Exit Full Screen";
             exitFullScreenToolStripMenuItem.Click += exitFullScreenToolStripMenuItem_Click;
             // 
             // closeAppToolStripMenuItem
             // 
             closeAppToolStripMenuItem.Name = "closeAppToolStripMenuItem";
-            closeAppToolStripMenuItem.Size = new Size(270, 34);
+            closeAppToolStripMenuItem.Size = new Size(230, 34);
             closeAppToolStripMenuItem.Text = "Close App";
             closeAppToolStripMenuItem.Click += closeAppToolStripMenuItem_Click;
-            // 
-            // videoView1
-            // 
-            videoView1.BackColor = Color.DeepSkyBlue;
-            videoView1.Dock = DockStyle.Fill;
-            videoView1.ForeColor = Color.Coral;
-            videoView1.Location = new Point(0, 33);
-            videoView1.MediaPlayer = null;
-            videoView1.Name = "videoView1";
-            videoView1.Size = new Size(1259, 601);
-            videoView1.TabIndex = 1;
-            videoView1.Text = "videoView1";
             // 
             // guna2Panel1
             // 
@@ -152,12 +139,12 @@
             guna2Panel1.Controls.Add(guna2Button3);
             guna2Panel1.Controls.Add(guna2Button2);
             guna2Panel1.Controls.Add(guna2Button1);
-            customizableEdges9.BottomLeft = false;
-            customizableEdges9.TopLeft = false;
-            guna2Panel1.CustomizableEdges = customizableEdges9;
+            customizableEdges19.BottomLeft = false;
+            customizableEdges19.TopLeft = false;
+            guna2Panel1.CustomizableEdges = customizableEdges19;
             guna2Panel1.Location = new Point(959, 33);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2Panel1.Size = new Size(300, 601);
             guna2Panel1.TabIndex = 2;
             // 
@@ -165,7 +152,7 @@
             // 
             guna2Button4.BackColor = Color.Transparent;
             guna2Button4.BorderRadius = 18;
-            guna2Button4.CustomizableEdges = customizableEdges1;
+            guna2Button4.CustomizableEdges = customizableEdges11;
             guna2Button4.DisabledState.BorderColor = Color.DarkGray;
             guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -174,7 +161,7 @@
             guna2Button4.ForeColor = Color.White;
             guna2Button4.Location = new Point(30, 424);
             guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button4.Size = new Size(270, 68);
             guna2Button4.TabIndex = 3;
             guna2Button4.Text = "Form 4";
@@ -184,7 +171,7 @@
             // 
             guna2Button3.BackColor = Color.Transparent;
             guna2Button3.BorderRadius = 18;
-            guna2Button3.CustomizableEdges = customizableEdges3;
+            guna2Button3.CustomizableEdges = customizableEdges13;
             guna2Button3.DisabledState.BorderColor = Color.DarkGray;
             guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -193,7 +180,7 @@
             guna2Button3.ForeColor = Color.White;
             guna2Button3.Location = new Point(30, 321);
             guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Button3.Size = new Size(270, 68);
             guna2Button3.TabIndex = 2;
             guna2Button3.Text = "Form 3";
@@ -203,7 +190,7 @@
             // 
             guna2Button2.BackColor = Color.Transparent;
             guna2Button2.BorderRadius = 18;
-            guna2Button2.CustomizableEdges = customizableEdges5;
+            guna2Button2.CustomizableEdges = customizableEdges15;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -212,7 +199,7 @@
             guna2Button2.ForeColor = Color.White;
             guna2Button2.Location = new Point(30, 222);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2Button2.Size = new Size(270, 68);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "Form 2";
@@ -222,7 +209,7 @@
             // 
             guna2Button1.BackColor = Color.Transparent;
             guna2Button1.BorderRadius = 18;
-            guna2Button1.CustomizableEdges = customizableEdges7;
+            guna2Button1.CustomizableEdges = customizableEdges17;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -231,7 +218,7 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Location = new Point(30, 104);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2Button1.Size = new Size(270, 68);
             guna2Button1.TabIndex = 0;
             guna2Button1.Text = "Form 1";
@@ -242,9 +229,8 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1259, 624);
+            ClientSize = new Size(1259, 586);
             Controls.Add(guna2Panel1);
-            Controls.Add(videoView1);
             Controls.Add(menuStrip1);
             ImeMode = ImeMode.On;
             MainMenuStrip = menuStrip1;
@@ -258,6 +244,11 @@
             PerformLayout();
         }
 
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         #endregion
 
         private MenuStrip menuStrip1;
@@ -270,7 +261,6 @@
         private ToolStripMenuItem fullScreenToolStripMenuItem;
         private ToolStripMenuItem exitFullScreenToolStripMenuItem;
         private ToolStripMenuItem closeAppToolStripMenuItem;
-        private LibVLCSharp.WinForms.VideoView videoView1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
