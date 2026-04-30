@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -40,12 +41,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
             openFileToolStripMenuItem = new ToolStripMenuItem();
@@ -57,13 +52,13 @@
             videoView1 = new LibVLCSharp.WinForms.VideoView();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            guna2TrackBarVideo = new Guna.UI2.WinForms.Guna2TrackBar();
+            guna2TrackBarVolume = new Guna.UI2.WinForms.Guna2TrackBar();
+            timer1 = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)videoView1).BeginInit();
             guna2GradientPanel1.SuspendLayout();
@@ -91,12 +86,14 @@
             openFileToolStripMenuItem.Name = "openFileToolStripMenuItem";
             openFileToolStripMenuItem.Size = new Size(234, 34);
             openFileToolStripMenuItem.Text = "Open File";
+            openFileToolStripMenuItem.Click += openFileToolStripMenuItem_Click;
             // 
             // openMultifilesToolStripMenuItem
             // 
             openMultifilesToolStripMenuItem.Name = "openMultifilesToolStripMenuItem";
             openMultifilesToolStripMenuItem.Size = new Size(234, 34);
             openMultifilesToolStripMenuItem.Text = "Open Multifiles";
+            openMultifilesToolStripMenuItem.Click += openMultifilesToolStripMenuItem_Click;
             // 
             // viewToolStripMenuItem
             // 
@@ -127,6 +124,7 @@
             // 
             videoView1.AllowDrop = true;
             videoView1.BackColor = Color.LemonChiffon;
+            videoView1.BackgroundImageLayout = ImageLayout.Stretch;
             videoView1.Dock = DockStyle.Fill;
             videoView1.Location = new Point(0, 33);
             videoView1.MediaPlayer = null;
@@ -138,24 +136,24 @@
             // 
             // guna2GradientPanel1
             // 
+            guna2GradientPanel1.Controls.Add(guna2TrackBarVolume);
+            guna2GradientPanel1.Controls.Add(guna2TrackBarVideo);
             guna2GradientPanel1.Controls.Add(guna2Button6);
-            guna2GradientPanel1.Controls.Add(guna2ProgressBar2);
-            guna2GradientPanel1.Controls.Add(guna2ProgressBar1);
             guna2GradientPanel1.Controls.Add(guna2Button5);
-            guna2GradientPanel1.Controls.Add(guna2Button4);
             guna2GradientPanel1.Controls.Add(guna2Button3);
             guna2GradientPanel1.Controls.Add(guna2Button2);
             guna2GradientPanel1.Controls.Add(guna2Button1);
-            guna2GradientPanel1.CustomizableEdges = customizableEdges17;
+            guna2GradientPanel1.CustomizableEdges = customizableEdges11;
             guna2GradientPanel1.Dock = DockStyle.Bottom;
             guna2GradientPanel1.Location = new Point(0, 410);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
-            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2GradientPanel1.Size = new Size(1002, 40);
             guna2GradientPanel1.TabIndex = 1;
             // 
             // guna2Button6
             // 
+            guna2Button6.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             guna2Button6.CustomizableEdges = customizableEdges1;
             guna2Button6.DisabledState.BorderColor = Color.DarkGray;
             guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -163,70 +161,33 @@
             guna2Button6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button6.Font = new Font("Segoe UI", 9F);
             guna2Button6.ForeColor = Color.White;
-            guna2Button6.Location = new Point(839, 0);
+            guna2Button6.Location = new Point(855, 3);
             guna2Button6.Name = "guna2Button6";
             guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button6.Size = new Size(46, 29);
             guna2Button6.TabIndex = 7;
             guna2Button6.Text = "🔊";
             // 
-            // guna2ProgressBar2
-            // 
-            guna2ProgressBar2.CustomizableEdges = customizableEdges3;
-            guna2ProgressBar2.Location = new Point(891, 3);
-            guna2ProgressBar2.Name = "guna2ProgressBar2";
-            guna2ProgressBar2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2ProgressBar2.Size = new Size(111, 28);
-            guna2ProgressBar2.TabIndex = 6;
-            guna2ProgressBar2.Text = "guna2ProgressBar2";
-            guna2ProgressBar2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            // 
-            // guna2ProgressBar1
-            // 
-            guna2ProgressBar1.CustomizableEdges = customizableEdges5;
-            guna2ProgressBar1.Location = new Point(300, 9);
-            guna2ProgressBar1.Name = "guna2ProgressBar1";
-            guna2ProgressBar1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2ProgressBar1.Size = new Size(524, 19);
-            guna2ProgressBar1.TabIndex = 5;
-            guna2ProgressBar1.Text = "guna2ProgressBar1";
-            guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            // 
             // guna2Button5
             // 
-            guna2Button5.CustomizableEdges = customizableEdges7;
+            guna2Button5.CustomizableEdges = customizableEdges3;
             guna2Button5.DisabledState.BorderColor = Color.DarkGray;
             guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button5.Font = new Font("Segoe UI", 9F);
             guna2Button5.ForeColor = Color.White;
-            guna2Button5.Location = new Point(233, 3);
+            guna2Button5.Location = new Point(171, 3);
             guna2Button5.Name = "guna2Button5";
-            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button5.Size = new Size(46, 29);
             guna2Button5.TabIndex = 4;
-            guna2Button5.Text = "🔁";
-            // 
-            // guna2Button4
-            // 
-            guna2Button4.CustomizableEdges = customizableEdges9;
-            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button4.Font = new Font("Segoe UI", 9F);
-            guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(181, 3);
-            guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button4.Size = new Size(46, 29);
-            guna2Button4.TabIndex = 3;
-            guna2Button4.Text = "🔂";
+            guna2Button5.Text = "➡";
+            guna2Button5.Click += guna2Button5_Click;
             // 
             // guna2Button3
             // 
-            guna2Button3.CustomizableEdges = customizableEdges11;
+            guna2Button3.CustomizableEdges = customizableEdges5;
             guna2Button3.DisabledState.BorderColor = Color.DarkGray;
             guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -235,14 +196,15 @@
             guna2Button3.ForeColor = Color.White;
             guna2Button3.Location = new Point(107, 3);
             guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Button3.Size = new Size(46, 29);
             guna2Button3.TabIndex = 2;
             guna2Button3.Text = "⏩";
+            guna2Button3.Click += guna2Button3_Click;
             // 
             // guna2Button2
             // 
-            guna2Button2.CustomizableEdges = customizableEdges13;
+            guna2Button2.CustomizableEdges = customizableEdges7;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -251,14 +213,15 @@
             guna2Button2.ForeColor = Color.White;
             guna2Button2.Location = new Point(55, 3);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button2.Size = new Size(46, 29);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "▶";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges15;
+            guna2Button1.CustomizableEdges = customizableEdges9;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -267,10 +230,36 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Location = new Point(3, 3);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Button1.Size = new Size(46, 29);
             guna2Button1.TabIndex = 0;
             guna2Button1.Text = "⏪";
+            guna2Button1.Click += guna2Button1_Click;
+            // 
+            // guna2TrackBarVideo
+            // 
+            guna2TrackBarVideo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            guna2TrackBarVideo.Location = new Point(283, 0);
+            guna2TrackBarVideo.Maximum = 1000;
+            guna2TrackBarVideo.Name = "guna2TrackBarVideo";
+            guna2TrackBarVideo.Size = new Size(471, 34);
+            guna2TrackBarVideo.TabIndex = 8;
+            guna2TrackBarVideo.ThumbColor = Color.FromArgb(160, 113, 255);
+            guna2TrackBarVideo.Value = 0;
+            // 
+            // guna2TrackBarVolume
+            // 
+            guna2TrackBarVolume.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            guna2TrackBarVolume.Location = new Point(907, 0);
+            guna2TrackBarVolume.Name = "guna2TrackBarVolume";
+            guna2TrackBarVolume.Size = new Size(92, 34);
+            guna2TrackBarVolume.TabIndex = 9;
+            guna2TrackBarVolume.ThumbColor = Color.FromArgb(160, 113, 255);
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 500;
             // 
             // Form3
             // 
@@ -304,12 +293,12 @@
         private LibVLCSharp.WinForms.VideoView videoView1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar2;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TrackBar guna2TrackBarVolume;
+        private Guna.UI2.WinForms.Guna2TrackBar guna2TrackBarVideo;
+        private System.Windows.Forms.Timer timer1;
     }
 }
