@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://placehold.co/120x120/1a1a2e/00d4ff?text=ASH&font=montserrat" alt="ASHPRO Logo" width="120" height="120" style="border-radius: 20px;" />
+<img src="https://placehold.co/120x120/1a1a2e/00d4ff?text=ASH&font=montserrat" alt="ASHPRO Logo" width="120" height="120" style="border-radius: 20px;"/>
 
-# ⚡ ASHPRO Desktop Suite
+#  ASHPRO Desktop Suite
 
 ### *One Application. Three Powerhouses.*
 
@@ -22,7 +22,7 @@ A modern, feature-rich Windows Desktop Suite built with **C# & Windows Forms (.N
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [✨ Overview](#-overview)
 - [🎯 Features](#-features)
